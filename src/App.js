@@ -1,25 +1,119 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/app.css'
+import styled from "styled-components";
+import backgroundImage from './assets/images/background.jpg';
+import gaYulFaceImage from './assets/images/ga-yul-face.png'
+import {Link, Route, Routes} from "react-router-dom";
+import React from "react";
+import {Map} from "./components/Map";
+import {Gallery} from "./components/Gallery";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Background>
+        <MainImage>
+          <GaYulFace/>
+          <Texts>
+            <Title1>가율이의</Title1>
+            <Title2>첫번째 생일을 축하해주세요 !!</Title2>
+            <ButtonsBox>
+              <GoToGalleryButtonBox>
+                <LinkExtend to={'/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
+              </GoToGalleryButtonBox>
+              <GoToMapButtonBox>
+                <LinkExtend to={'/gallery'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
+              </GoToMapButtonBox>
+            </ButtonsBox>
+          </Texts>
+        </MainImage>
+        <Routes>
+          <Route path='/gallery' element={<Gallery/>}/>
+          <Route path='/gallery' element={<Map/>}/>
+        </Routes>
+      </Background>
   );
 }
+
+const Background = styled.div`
+  padding: 10px;
+  display: inline-flex;
+  width: 95%;
+  height: ${window.innerHeight + 20}px;
+  background-color: #E2D1C4;
+  background-repeat: round;
+`
+
+const MainImage = styled.div`
+  width: ${window.innerWidth}px;
+  height: ${window.innerHeight}px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(${backgroundImage});
+  background-repeat: no-repeat;
+  background-size: 100%;
+`
+
+const Texts = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+`
+
+const GaYulFace = styled.div`
+  margin-top: 50%;
+  margin-bottom: 35%;
+  width: 50%;
+  height: 230px;
+  background-image: url(${gaYulFaceImage});
+  background-size: 100%;
+  background-repeat: no-repeat;
+`
+
+const MainFont = styled.span`
+  font-family: var(--font-googleSingleDay);
+`
+
+const Title1 = styled(MainFont)`
+  font-size: 28px;
+`
+
+const Title2 = styled(MainFont)`
+  font-size: 24px
+`
+
+const LinkExtend = styled(Link)`
+  text-decoration-line: none;
+`
+
+const ButtonsBox = styled.div`
+  display: flex;
+`
+
+const GoToGalleryButtonBox = styled.div`
+  text-align: center;
+  margin: 0 0 10px 10px;
+  animation-duration: 2s;
+  animation-name: motion;
+  animation-iteration-count: infinite;
+`
+const GoToGallery = styled(MainFont)`
+  font-size: 20px;
+  color: palevioletred;
+`
+
+const GoToMapButtonBox = styled.div`
+  text-align: center;
+  margin: 0 0 10px 10px;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-name: motion;
+  animation-iteration-count: infinite;
+`
+const GoToMap = styled(MainFont)`
+  font-size: 20px;
+  color: palevioletred;
+`
 
 export default App;
