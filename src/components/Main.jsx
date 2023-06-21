@@ -1,36 +1,30 @@
-import './assets/css/app.css'
 import styled from "styled-components";
-import backgroundImage from './assets/images/background.jpg';
-import gaYulFaceImage from './assets/images/ga-yul-face.png'
-import {Link, Route, Routes} from "react-router-dom";
+import backgroundImage from '../assets/images/background.jpg';
+import gaYulFaceImage from '../assets/images/ga-yul-face.png'
+import {Link} from "react-router-dom";
+import '../assets/css/main.css'
 import React from "react";
-import {Map} from "./components/Map";
-import {Gallery} from "./components/Gallery";
 
-function App() {
-  return (
-      <Background>
-        <MainImage>
-          <GaYulFace/>
-          <Texts>
-            <Title1>가율이의</Title1>
-            <Title2>첫번째 생일을 축하해주세요 !!</Title2>
-            <ButtonsBox>
-              <GoToGalleryButtonBox>
-                <LinkExtend to={'/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
-              </GoToGalleryButtonBox>
-              <GoToMapButtonBox>
-                <LinkExtend to={'/gallery'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
-              </GoToMapButtonBox>
-            </ButtonsBox>
-          </Texts>
-        </MainImage>
-        <Routes>
-          <Route path='/gallery' element={<Gallery/>}/>
-          <Route path='/gallery' element={<Map/>}/>
-        </Routes>
-      </Background>
-  );
+export const Main = () => {
+    return (
+        <Background>
+            <MainImage>
+                <GaYulFace/>
+                <Texts>
+                    <Title1>가율이의</Title1>
+                    <Title2>첫번째 생일을 축하해주세요 !!</Title2>
+                    <ButtonsBox>
+                        <GoToGalleryButtonBox>
+                            <LinkExtend to={'/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
+                        </GoToGalleryButtonBox>
+                        <GoToMapButtonBox>
+                            <LinkExtend to={'/gallery'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
+                        </GoToMapButtonBox>
+                    </ButtonsBox>
+                </Texts>
+            </MainImage>
+        </Background>
+    )
 }
 
 const Background = styled.div`
@@ -116,4 +110,3 @@ const GoToMap = styled(MainFont)`
   color: palevioletred;
 `
 
-export default App;
