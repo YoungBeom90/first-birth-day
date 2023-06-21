@@ -5,6 +5,7 @@ export const Map = () => {
     return (
         <div>
             <MainFont/>
+            <h1>test</h1>
         </div>
     )
 }

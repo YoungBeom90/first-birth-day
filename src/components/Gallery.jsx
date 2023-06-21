@@ -68,7 +68,7 @@ const images = [
 export const Gallery = () => {
     return (
         <Background>
-            <Link to={'/'}><GoBack>🔙</GoBack></Link>
+            <Link to={'/first-birth-day'}><GoBack>🔙</GoBack></Link>
             <Contents>
                 {/*<Title>가율's 갤러리</Title>*/}
                 <ImageGallery
@@ -82,7 +82,7 @@ export const Gallery = () => {
                 />
             </Contents>
             <GoToMapButtonBox>
-                <LinkExtend to={'/gallery'}><GoToMap>👉돌잔치 오시는길</GoToMap></LinkExtend>
+                <LinkExtend to={'/map'}><GoToMap>👉돌잔치 오시는길</GoToMap></LinkExtend>
             </GoToMapButtonBox>
         </Background>
     )
@@ -132,9 +132,6 @@ const GoToMapButtonBox = styled.div`
 
 const LinkExtend = styled(Link)`
   text-decoration-line: none;
-  //position: absolute;
-  //top: 6%;
-  //right: 7%;
 `
 
 const GoToMap = styled(MainFont)`

@@ -5,15 +5,15 @@ import {Gallery} from "./components/Gallery";
 import {Main} from "./components/Main";
 
 function App() {
-  return (
-      <div className={'app'}>
-          <Routes>
-              <Route path='/main' element={<Main/>}/>
-              <Route path='/gallery' element={<Gallery/>}/>
-              <Route path='/map' element={<Map/>}/>
-          </Routes>
-      </div>
-  );
+    return (
+        <div className={'app'}>
+            <Routes>
+                <Route path='/first-birth-day' element={<Main/>}/>
+                <Route path='/gallery' element={<Gallery/>}/>
+                <Route path='/map' element={<Map/>}/>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

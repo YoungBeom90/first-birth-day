@@ -18,7 +18,7 @@ export const Main = () => {
                             <LinkExtend to={'/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
                         </GoToGalleryButtonBox>
                         <GoToMapButtonBox>
-                            <LinkExtend to={'/gallery'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
+                            <LinkExtend to={'/map'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
                         </GoToMapButtonBox>
                     </ButtonsBox>
                 </Texts>
