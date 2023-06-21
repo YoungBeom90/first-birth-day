@@ -53,7 +53,7 @@ const Texts = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 200px;
+  top: 182px;
   
 `
 
@@ -87,7 +87,7 @@ const ButtonsBox = styled.div`
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 150px;
+  top: 60px;
 `
 
 const GoToGalleryButtonBox = styled.div`

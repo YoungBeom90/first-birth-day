@@ -126,14 +126,14 @@ const MainFont = styled.span`
 
 const GoBack = styled.h2`
   position: absolute;
-  top: 10%;
-  left: 8%;
+  top: 3%;
+  left: 5%;
   font-size: 35px;
 `
 
 const GoToMapButtonBox = styled.div`
   position: absolute;
-  top: 68%;
+  top: 73%;
   animation-duration: 2s;
   animation-delay: 1s;
   animation-name: motionUp;
@@ -146,5 +146,5 @@ const LinkExtend = styled(Link)`
 
 const GoToMap = styled(MainFont)`
   font-size: 20px;
-  color: #75827B;
+  color: #B66062;
 `
