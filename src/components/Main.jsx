@@ -8,7 +8,7 @@ import React from "react";
 export const Main = () => {
     return (
         <Background>
-            <MainImage>
+            <BackgroundImage>
                 <GaYulFace/>
                 <Texts>
                     <Title1>가율이의</Title1>
@@ -22,29 +22,29 @@ export const Main = () => {
                         </GoToMapButtonBox>
                     </ButtonsBox>
                 </Texts>
-            </MainImage>
+            </BackgroundImage>
         </Background>
     )
 }
 
 const Background = styled.div`
-  padding: 10px;
-  display: inline-flex;
-  width: 95%;
-  height: ${window.innerHeight + 20}px;
+  display: flex;
+  width: 100%;
+  height: ${window.innerHeight}px;
   background-color: #E2D1C4;
-  background-repeat: round;
+  background-repeat: no-repeat;
 `
 
-const MainImage = styled.div`
-  width: ${window.innerWidth}px;
-  height: ${window.innerHeight}px;
+const BackgroundImage = styled.div`
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-image: url(${backgroundImage});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
 `
 
 const Texts = styled.div`
@@ -52,17 +52,18 @@ const Texts = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
+  top: 200px;
+  
 `
 
 const GaYulFace = styled.div`
-  margin-top: 50%;
-  margin-bottom: 35%;
-  width: 50%;
-  height: 230px;
+  width: 300px;
+  height: 300px;
   background-image: url(${gaYulFaceImage});
   background-size: 100%;
   background-repeat: no-repeat;
+  position: absolute;
 `
 
 const MainFont = styled.span`
@@ -74,7 +75,7 @@ const Title1 = styled(MainFont)`
 `
 
 const Title2 = styled(MainFont)`
-  font-size: 24px
+  font-size: 24px;
 `
 
 const LinkExtend = styled(Link)`
@@ -82,14 +83,18 @@ const LinkExtend = styled(Link)`
 `
 
 const ButtonsBox = styled.div`
+  width: 400px;
+  position: absolute;
   display: flex;
+  justify-content: center;
+  top: 150px;
 `
 
 const GoToGalleryButtonBox = styled.div`
   text-align: center;
-  margin: 0 0 10px 10px;
+  margin-right: 10px;
   animation-duration: 2s;
-  animation-name: motion;
+  animation-name: motionUp;
   animation-iteration-count: infinite;
 `
 const GoToGallery = styled(MainFont)`
@@ -99,10 +104,9 @@ const GoToGallery = styled(MainFont)`
 
 const GoToMapButtonBox = styled.div`
   text-align: center;
-  margin: 0 0 10px 10px;
   animation-duration: 2s;
   animation-delay: 1s;
-  animation-name: motion;
+  animation-name: motionUp;
   animation-iteration-count: infinite;
 `
 const GoToMap = styled(MainFont)`

@@ -68,67 +68,77 @@ const images = [
 export const Gallery = () => {
     return (
         <Background>
-            <Link to={'/first-birth-day'}><GoBack>🔙</GoBack></Link>
-            <Contents>
-                {/*<Title>가율's 갤러리</Title>*/}
-                <ImageGallery
-                    items={images}
-                    showThumbnails={false}
-                    showBullets={true}
-                    showPlayButton={false}
-                    showFullscreenButton={false}
-                    // autoPlay={true}
-                    infinite={false}
-                />
-            </Contents>
-            <GoToMapButtonBox>
-                <LinkExtend to={'/map'}><GoToMap>👉돌잔치 오시는길</GoToMap></LinkExtend>
-            </GoToMapButtonBox>
+            <BackgroundImage>
+                <Link to={'/first-birth-day'}><GoBack>🔙</GoBack></Link>
+                <Contents>
+                    <ImageGallery
+                        items={images}
+                        showThumbnails={false}
+                        showBullets={true}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        // autoPlay={true}
+                        infinite={false}
+                    />
+                    <GoToMapButtonBox>
+                        <LinkExtend to={'/map'}><GoToMap>👉돌잔치 오시는길</GoToMap></LinkExtend>
+                    </GoToMapButtonBox>
+                </Contents>
+
+            </BackgroundImage>
         </Background>
     )
 }
 
 const Background = styled.div`
-  width: ${window.innerWidth}px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: ${window.innerHeight}px;
-  background-image: url(${backgroundImage});
-  background-size: 100%;
+  background-color: #E2D1C4;
   background-repeat: no-repeat;
+`
+
+const BackgroundImage = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(${backgroundImage});
+  background-repeat: no-repeat;
+  background-position: center;
 `
 
 const Contents = styled.div`
   display: flex;
   flex-direction: column;
-  //justify-content: center;
+  justify-content: center;
   align-items: center;
-  padding-top: 100px;
-
 `
 
 const MainFont = styled.span`
   font-family: var(--font-googleSingleDay);
 `
 
-// const Title = styled(MainFont)`
-//   font-size: 25px;
-//   padding-top: 100px;
-//   color: palevioletred;
-// `
-
 const GoBack = styled.h2`
   position: absolute;
-  left: 20px;
-  font-size: 30px;
+  top: 10%;
+  left: 8%;
+  font-size: 35px;
 `
 
 const GoToMapButtonBox = styled.div`
-  text-align: center;
-  margin: 0 0 10px 10px;
-  padding-top: 150px;
+  position: absolute;
+  top: 68%;
   animation-duration: 2s;
   animation-delay: 1s;
-  animation-name: motion;
-  animation-iteration-count: infinite;`
+  animation-name: motionUp;
+  animation-iteration-count: infinite;
+`
 
 const LinkExtend = styled(Link)`
   text-decoration-line: none;

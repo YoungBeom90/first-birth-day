@@ -25,12 +25,12 @@ code {
 }
 
 .image-gallery {
-    width: 67%;
-    height: 80%;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .image-gallery-image {
-    border-radius: 77%;
+    border-radius: 30%;
 }
 
 .image-gallery-bullets {
