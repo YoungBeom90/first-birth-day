@@ -57,11 +57,11 @@ export const Map = () => {
 const Background = styled.div`
   width: ${window.innerWidth}px;
   height: ${window.innerHeight}px;
-  margin: 0;
+  padding-top: 10px;
   background-color: lemonchiffon;
 `
 
-const MainFont = styled.h2`
+const MainFont = styled.h1`
   font-family: var(--font-googleSingleDay);
 `
 
