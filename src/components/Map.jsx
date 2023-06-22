@@ -58,7 +58,7 @@ export const Map = () => {
                 </CopyToClipboard>
                 <AppButtons>
                     <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
-                    <KakaoAppButton href={`kakaomap://look?p=37.537229,127.005515`}/>
+                    <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
                 </AppButtons>
                 <br/>더 클래스 500 B동 3층
                 <br/>2,7호선 건대입구역
