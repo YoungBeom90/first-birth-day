@@ -2,12 +2,13 @@ import styled from "styled-components";
 import {GoogleMap, MarkerF, useJsApiLoader} from "@react-google-maps/api";
 import maker from '../assets/images/marker.png';
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import {Link} from "react-router-dom";
 
 const containerStyle = {
     width: '95%',
     height: '400px',
     marginLeft: '2%',
-    borderRadius: '20%'
+    borderRadius: '3%'
 };
 
 const center = {
@@ -36,7 +37,7 @@ export const Map = () => {
 
     return (
         <Background>
-            <MainFont/>
+            <GoBack><LinkExtend to={'/first-birth-day'}>🔙</LinkExtend></GoBack>
             <Title>가율이 보러 오시는길</Title>
             {isLoaded ? (
                 <GoogleMap
@@ -48,8 +49,14 @@ export const Map = () => {
                     <MarkerF position={markerPosition} icon={{url: maker}}/>
                 </GoogleMap>
             ) : <></>}
-            <Description>📍서울 광진구 능동로 90 <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}><Copy>[주소복사]</Copy></CopyToClipboard><br/>더 클래스 500 B동 3층<br/>2,7호선 건대입구 5번 출구 맞은편</Description>
-
+            <Description>
+                📍서울 광진구 능동로 90
+                <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
+                    <Copy>[주소복사]</Copy>
+                </CopyToClipboard>
+                <br/>더 클래스 500 B동 3층
+                <br/>2,7호선 건대입구역 5번 출구 맞은편
+            </Description>
         </Background>
     )
 }
@@ -81,4 +88,15 @@ const Copy = styled(MainFont)`
   font-size: 18px;
   color: cornflowerblue;
   display: inline-block;
+`
+
+const GoBack = styled.h2`
+  position: absolute;
+  top: -1%;
+  left: 5%;
+  font-size: 35px;
+`
+
+const LinkExtend = styled(Link)`
+  text-decoration-line: none;
 `

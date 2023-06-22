@@ -81,7 +81,7 @@ export const Gallery = () => {
                         infinite={false}
                     />
                     <GoToMapButtonBox>
-                        <LinkExtend to={'/map'}><GoToMap>👉돌잔치 오시는길</GoToMap></LinkExtend>
+                        <LinkExtend to={'/map'}><GoToMap>👉오시는길</GoToMap></LinkExtend>
                     </GoToMapButtonBox>
                 </Contents>
 
@@ -120,7 +120,7 @@ const Contents = styled.div`
   align-items: center;
 `
 
-const MainFont = styled.span`
+const MainFont = styled.h2`
   font-family: var(--font-googleSingleDay);
 `
 
@@ -131,17 +131,18 @@ const GoBack = styled.h2`
   font-size: 35px;
 `
 
+const LinkExtend = styled(Link)`
+  text-decoration-line: none;
+`
+
 const GoToMapButtonBox = styled.div`
   position: absolute;
-  top: 73%;
+  top: 5%;
+  right: 3%;
   animation-duration: 2s;
   animation-delay: 1s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
-`
-
-const LinkExtend = styled(Link)`
-  text-decoration-line: none;
 `
 
 const GoToMap = styled(MainFont)`
