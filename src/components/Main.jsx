@@ -30,6 +30,7 @@ export const Main = () => {
 const Background = styled.div`
   display: flex;
   width: 100%;
+  max-width: ${window.innerWidth}px;
   height: ${window.innerHeight}px;
   background-color: #E2D1C4;
   background-repeat: no-repeat;
@@ -38,6 +39,7 @@ const Background = styled.div`
 const BackgroundImage = styled.div`
   width: 100%;
   max-width: 100%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
