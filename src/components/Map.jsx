@@ -76,10 +76,14 @@ const Background = styled.div`
 `
 
 const MainFont = styled.h1`
+  font-family: var(--font-googleGowunDodum);
+`
+
+const MainFont2 = styled.h1`
   font-family: var(--font-googleSingleDay);
 `
 
-const Title = styled(MainFont)`
+const Title = styled(MainFont2)`
   font-size: 30px;
   text-align: center;
   color: palevioletred;
@@ -125,10 +129,6 @@ const NaverAppButton = styled.a`
   position: relative;
   left: -20px;
 `
-
-// const NaverLink = styled.a`
-//   text-decoration-line: none;
-//   `
 
 const KakaoAppButton = styled.a`
   width: 60px;

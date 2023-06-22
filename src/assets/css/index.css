@@ -19,10 +19,17 @@ code {
     src: url(../fonts/Single_Day/SingleDay-Regular.ttf);
 }
 
-:root {
-    --font-googleGugi: "googleGugi";
-    --font-googleSingleDay: "googleSingleDay";
+@font-face {
+    font-family: "googleGowunDodum";
+    src: url(../fonts/Gowun_Dodum/GowunDodum-Regular.ttf);
 }
+
+:root {
+    --font-googleSingleDay: "googleSingleDay";
+    --font-googleGowunDodum: "googleGowunDodum";
+}
+
+
 
 .image-gallery {
     width: 100%;
