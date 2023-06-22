@@ -3,8 +3,9 @@ import {GoogleMap, MarkerF, useJsApiLoader} from "@react-google-maps/api";
 import maker from '../assets/images/marker.png';
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import {Link} from "react-router-dom";
-import naverMapIcon from '../assets/images/naver_map.gif'
-import kakaoMapIcon from '../assets/images/kakao_map.gif'
+import naverMapIcon from '../assets/images/naver_map.gif';
+import kakaoMapIcon from '../assets/images/kakao_map.gif';
+import copyIcon from '../assets/images/copy.png';
 
 const containerStyle = {
     width: '95%',
@@ -52,17 +53,19 @@ export const Map = () => {
                 </GoogleMap>
             ) : <></>}
             <Description>
-                📍서울 광진구 능동로 90&nbsp;
-                <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
-                    <Copy>[주소복사]</Copy>
-                </CopyToClipboard>
+                <Address>
+                    <span>📍서울 광진구 능동로 90&nbsp;</span>
+                    <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
+                        <CopyButton />
+                    </CopyToClipboard>
+                </Address>
                 <AppButtons>
                     <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
                     <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
-                </AppButtons>
-                <br/>더 클래스 500 B동 3층
-                <br/>2,7호선 건대입구역
-                <br/>5번 출구 맞은편에 있습니다. 😍
+                </AppButtons><br/>
+                <span>더 클래스 500 B동 3층</span><br/>
+                <span>2,7호선 건대입구역</span><br/>
+                <span>5번 출구 맞은편에 있습니다. 😍</span>
             </Description>
         </Background>
     )
@@ -89,17 +92,24 @@ const Title = styled(MainFont2)`
   color: palevioletred;
 `
 
+const Address = styled.div`
+  margin-bottom: 22px;
+`
+
 const Description = styled(MainFont)`
   font-size: 20px;
   text-align: center;
-  color: palevioletred;
+  color: midnightblue;
 `
 
-const Copy = styled.span`
-  font-size: 18px;
-  color: cornflowerblue;
+const CopyButton = styled.a`
+  width: 23px;
+  height: 23px;
   display: inline-block;
-  margin-bottom: 15px;
+  background-image: url(${copyIcon});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
 `
 
 const GoBack = styled.h2`
