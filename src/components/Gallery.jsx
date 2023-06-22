@@ -81,7 +81,7 @@ export const Gallery = () => {
                         infinite={false}
                     />
                     <GoToMapButtonBox>
-                        <LinkExtend to={'first-birth-day/map'}><GoToMap>👉오시는길</GoToMap></LinkExtend>
+                        <LinkExtend to={'/first-birth-day/map'}><GoToMap>👉오시는길</GoToMap></LinkExtend>
                     </GoToMapButtonBox>
                 </Contents>
 
