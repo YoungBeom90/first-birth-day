@@ -15,10 +15,10 @@ export const Main = () => {
                     <Title2>첫번째 생일을 축하해주세요 !!</Title2>
                     <ButtonsBox>
                         <GoToGalleryButtonBox>
-                            <LinkExtend to={'/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
+                            <LinkExtend to={'/first-birth-day/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
                         </GoToGalleryButtonBox>
                         <GoToMapButtonBox>
-                            <LinkExtend to={'/map'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
+                            <LinkExtend to={'/first-birth-day/map'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
                         </GoToMapButtonBox>
                     </ButtonsBox>
                 </Texts>
