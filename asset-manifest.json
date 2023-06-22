@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/first-birth-day/static/css/main.26a7d13a.css",
-    "main.js": "/first-birth-day/static/js/main.5a8f033a.js",
+    "main.js": "/first-birth-day/static/js/main.f787fd80.js",
     "static/media/ga-yul-face.png": "/first-birth-day/static/media/ga-yul-face.6c94ab5089ffd6ba958f.png",
     "static/media/GowunDodum-Regular.ttf": "/first-birth-day/static/media/GowunDodum-Regular.39c9a39c246c3c54c53e.ttf",
     "static/media/SingleDay-Regular.ttf": "/first-birth-day/static/media/SingleDay-Regular.b78b535a0525794dd2ad.ttf",
@@ -20,10 +20,10 @@
     "static/media/marker.png": "/first-birth-day/static/media/marker.9ed724149902e2e8f7c4.png",
     "index.html": "/first-birth-day/index.html",
     "main.26a7d13a.css.map": "/first-birth-day/static/css/main.26a7d13a.css.map",
-    "main.5a8f033a.js.map": "/first-birth-day/static/js/main.5a8f033a.js.map"
+    "main.f787fd80.js.map": "/first-birth-day/static/js/main.f787fd80.js.map"
   },
   "entrypoints": [
     "static/css/main.26a7d13a.css",
-    "static/js/main.5a8f033a.js"
+    "static/js/main.f787fd80.js"
   ]
 }
