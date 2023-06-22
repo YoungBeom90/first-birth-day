@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/first-birth-day/static/css/main.30bd0e1b.css",
-    "main.js": "/first-birth-day/static/js/main.3ea2a811.js",
+    "main.css": "/first-birth-day/static/css/main.26a7d13a.css",
+    "main.js": "/first-birth-day/static/js/main.5a8f033a.js",
     "static/media/ga-yul-face.png": "/first-birth-day/static/media/ga-yul-face.6c94ab5089ffd6ba958f.png",
+    "static/media/GowunDodum-Regular.ttf": "/first-birth-day/static/media/GowunDodum-Regular.39c9a39c246c3c54c53e.ttf",
     "static/media/SingleDay-Regular.ttf": "/first-birth-day/static/media/SingleDay-Regular.b78b535a0525794dd2ad.ttf",
     "static/media/1.jpeg": "/first-birth-day/static/media/1.87be4978b3262c4c21f9.jpeg",
     "static/media/naver_map.gif": "/first-birth-day/static/media/naver_map.2d35685929c850ad3691.gif",
@@ -18,11 +19,11 @@
     "static/media/background2.jpeg": "/first-birth-day/static/media/background2.5d5f4c4129a11945dc16.jpeg",
     "static/media/marker.png": "/first-birth-day/static/media/marker.9ed724149902e2e8f7c4.png",
     "index.html": "/first-birth-day/index.html",
-    "main.30bd0e1b.css.map": "/first-birth-day/static/css/main.30bd0e1b.css.map",
-    "main.3ea2a811.js.map": "/first-birth-day/static/js/main.3ea2a811.js.map"
+    "main.26a7d13a.css.map": "/first-birth-day/static/css/main.26a7d13a.css.map",
+    "main.5a8f033a.js.map": "/first-birth-day/static/js/main.5a8f033a.js.map"
   },
   "entrypoints": [
-    "static/css/main.30bd0e1b.css",
-    "static/js/main.3ea2a811.js"
+    "static/css/main.26a7d13a.css",
+    "static/js/main.5a8f033a.js"
   ]
 }
