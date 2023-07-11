@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import '../assets/css/main.css'
 import React from "react";
 
+
 export const Main = () => {
     return (
         <Background>
@@ -15,10 +16,10 @@ export const Main = () => {
                     <Title2>첫번째 생일을 축하해주세요 !!</Title2>
                     <ButtonsBox>
                         <GoToGalleryButtonBox>
-                            <LinkExtend to={'/first-birth-day/gallery'}><GoToGallery>👉 돌사진 구경하기</GoToGallery></LinkExtend>
+                            <LinkExtend to={'/first-birth-day/gallery'}><GoToGallery>📸 사진 구경하기</GoToGallery></LinkExtend>
                         </GoToGalleryButtonBox>
                         <GoToMapButtonBox>
-                            <LinkExtend to={'/first-birth-day/map'}><GoToMap>👉 돌잔치 오시는길</GoToMap></LinkExtend>
+                            <LinkExtend to={'/first-birth-day/map'}><GoToMap>📍오시는길</GoToMap></LinkExtend>
                         </GoToMapButtonBox>
                     </ButtonsBox>
                 </Texts>
@@ -31,8 +32,8 @@ const Background = styled.div`
   display: flex;
   width: 100%;
   max-width: ${window.innerWidth}px;
-  height: ${window.innerHeight}px;
-  background-color: #E2D1C4;
+  height: ${window.innerHeight + 100}px;
+  background-color: #FFCCDC;
   background-repeat: no-repeat;
 `
 
@@ -42,7 +43,7 @@ const BackgroundImage = styled.div`
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
   background-image: url(${backgroundImage});
   background-repeat: no-repeat;
@@ -55,21 +56,24 @@ const Texts = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 182px;
+  top: 30%;
   
 `
 
 const GaYulFace = styled.div`
   width: 300px;
-  height: 300px;
+  height: 35%;
   background-image: url(${gaYulFaceImage});
   background-size: 100%;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
+  top: 30%;
+  //border: #DB7093 solid 2px;
+  border-radius: 100%;
 `
 
 const MainFont = styled.span`
-  font-family: var(--font-googleSingleDay);
+  font-family: var(--font-googleGamjaFlower);
 `
 
 const Title1 = styled(MainFont)`

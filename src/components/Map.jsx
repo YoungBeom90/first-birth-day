@@ -6,12 +6,16 @@ import {Link} from "react-router-dom";
 import naverMapIcon from '../assets/images/naver_map.gif';
 import kakaoMapIcon from '../assets/images/kakao_map.gif';
 import copyIcon from '../assets/images/copy.png';
+import backgroundImage from '../assets/images/background4.jpg'
 
 const containerStyle = {
-    width: '95%',
-    height: '350px',
-    marginLeft: '2%',
-    borderRadius: '3%'
+    width: '90%',
+    height: '300px',
+    maxWidth: '500px',
+    borderRadius: '3%',
+    border: '2px solid black',
+    marginRight: 'auto',
+    marginLeft: 'auto'
 };
 
 const center = {
@@ -24,7 +28,7 @@ const markerPosition = {
     lng: 127.0708471,
 }
 
-const myStyles = [
+const mapCustomStyle = [
     {
         featureType: "poi.business",
         elementType: "labels",
@@ -41,31 +45,34 @@ export const Map = () => {
     return (
         <Background>
             <GoBack><LinkExtend to={'/first-birth-day'}>🔙</LinkExtend></GoBack>
-            <Title>가율이 보러 오시는길</Title>
+            {/*<Title>가율이 보러 오시는길</Title>*/}
             {isLoaded ? (
                 <GoogleMap
                     mapContainerStyle={containerStyle}
                     center={center}
                     zoom={17}
-                    options={{ disableDefaultUI: true, styles: myStyles }}
+                    options={{ disableDefaultUI: true, styles: mapCustomStyle }}
                 >
                     <MarkerF position={markerPosition} icon={{url: maker}}/>
                 </GoogleMap>
             ) : <></>}
             <Description>
-                <Address>
-                    <span>📍서울 광진구 능동로 90&nbsp;</span>
-                    <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
-                        <CopyButton />
-                    </CopyToClipboard>
-                </Address>
-                <AppButtons>
-                    <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
-                    <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
-                </AppButtons><br/>
-                <span>더 클래스 500 B동 3층</span><br/>
-                <span>2,7호선 건대입구역</span><br/>
-                <span>5번 출구 맞은편에 있습니다. 😍</span>
+                <TextGroup>
+                    <Address>
+                        <span>📍서울 광진구 능동로 90&nbsp;</span>
+                        <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
+                            <CopyButton />
+                        </CopyToClipboard>
+                    </Address>
+                    <AppButtons>
+                        <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
+                        <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
+                    </AppButtons><br/>
+                    <span>더 클래스 500 B동 3층</span><br/>
+                    <span>2,7호선 건대입구역</span><br/>
+                    <span>5번 출구 맞은편에 있습니다. 😍</span>
+                </TextGroup>
+
             </Description>
         </Background>
     )
@@ -73,33 +80,65 @@ export const Map = () => {
 
 const Background = styled.div`
   width: ${window.innerWidth}px;
-  height: ${window.innerHeight+ 100}px;
-  padding-top: 10px;
+  height: ${window.innerHeight + 50}px;
+  padding-top: 80px;
   background-color: lemonchiffon;
+  background-image: url(${backgroundImage});
+  background-size: 110%;
+  z-index: 1;
 `
 
 const MainFont = styled.h1`
-  font-family: var(--font-googleGowunDodum);
+  font-family: var(--font-googleGamjaFlower);
 `
 
-const MainFont2 = styled.h1`
-  font-family: var(--font-googleSingleDay);
-`
+// const MainFont2 = styled.h1`
+//   font-family: var(--font-googleHiMelody);
+// `
 
-const Title = styled(MainFont2)`
-  font-size: 30px;
-  text-align: center;
-  color: palevioletred;
-`
+// const Title = styled(MainFont2)`
+//   font-size: 30px;
+//   text-align: center;
+//   color: midnightblue;
+// `
 
 const Address = styled.div`
   margin-bottom: 22px;
 `
 
 const Description = styled(MainFont)`
-  font-size: 20px;
+  width: 95%;
+  height: 260px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  
+  ::after {
+    width: 95%;
+    height: 260px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    content: "";
+    background: wheat;
+    position: absolute;
+    top: -10px;
+    left: 2%;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.8;
+  }
+`
+
+const TextGroup = styled(MainFont)`
+  font-size: 22px;
   text-align: center;
   color: midnightblue;
+  z-index: 0;
+
 `
 
 const CopyButton = styled.a`
@@ -114,7 +153,7 @@ const CopyButton = styled.a`
 
 const GoBack = styled.h2`
   position: absolute;
-  top: -1%;
+  top: 1%;
   left: 3%;
   font-size: 35px;
 `

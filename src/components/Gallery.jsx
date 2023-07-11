@@ -77,11 +77,11 @@ export const Gallery = () => {
                         showBullets={true}
                         showPlayButton={false}
                         showFullscreenButton={false}
-                        // autoPlay={true}
-                        infinite={false}
+                        autoPlay={true}
+                        infinite={true}
                     />
                     <GoToMapButtonBox>
-                        <LinkExtend to={'/first-birth-day/map'}><GoToMap>👉오시는길</GoToMap></LinkExtend>
+                        <LinkExtend to={'/first-birth-day/map'}><GoToMap>📍오시는길</GoToMap></LinkExtend>
                     </GoToMapButtonBox>
                 </Contents>
 
@@ -96,7 +96,7 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: ${window.innerHeight}px;
+  height: ${window.innerHeight + 150}px;
   background-color: #E2D1C4;
   background-repeat: no-repeat;
 `
@@ -121,7 +121,7 @@ const Contents = styled.div`
 `
 
 const MainFont = styled.h2`
-  font-family: var(--font-googleSingleDay);
+  font-family: var(--font-googleHiMelody);
 `
 
 const GoBack = styled.h2`
@@ -146,6 +146,6 @@ const GoToMapButtonBox = styled.div`
 `
 
 const GoToMap = styled(MainFont)`
-  font-size: 20px;
+  font-size: 22px;
   color: #B66062;
 `
