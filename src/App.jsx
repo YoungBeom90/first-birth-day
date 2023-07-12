@@ -13,8 +13,8 @@ function App() {
                 url={welcomeMp3}
                 playing={true}
                 controls={true}
-                volume={0.1}
-                width={'20px'}
+                volume={0.5}
+                width={'180px'}
                 height={'20px'}
                 style={{position: 'absolute'}}
             />
