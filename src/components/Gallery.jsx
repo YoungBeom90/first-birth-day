@@ -11,6 +11,7 @@ import image8 from '../assets/images/gallary/8.jpeg'
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import React from "react";
+import goHomeIcon from '../assets/images/back-to-home.png'
 
 const images = [
     {
@@ -68,7 +69,7 @@ const images = [
 export const Gallery = () => {
     return (
         <Background>
-                <Link to={'/first-birth-day'}><GoBack>🔙</GoBack></Link>
+                <Link to={'/first-birth-day'}><GoHome/></Link>
                 <Contents>
                     <ImageGallery
                         items={images}
@@ -112,11 +113,14 @@ const MainFont = styled.h2`
   font-family: var(--font-googleHiMelody);
 `
 
-const GoBack = styled.h2`
+const GoHome= styled.div`
   position: absolute;
-  top: 3%;
+  top: 7%;
   left: 5%;
-  font-size: 35px;
+  width: 32px;
+  height: 32px;
+  background-image: url(${goHomeIcon});
+  background-size: 100%;
 `
 
 const LinkExtend = styled(Link)`
@@ -125,7 +129,7 @@ const LinkExtend = styled(Link)`
 
 const GoToMapButtonBox = styled.div`
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 3%;
   animation-duration: 2s;
   animation-delay: 1s;

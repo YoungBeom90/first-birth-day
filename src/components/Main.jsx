@@ -6,7 +6,6 @@ import {Link} from "react-router-dom";
 import '../assets/css/main.css'
 import React from "react";
 
-
 export const Main = () => {
     return (
         <Background>
@@ -69,11 +68,12 @@ const GaYulFace = styled.div`
 
 const FaceFrame = styled.div`
   width: 300px;
-  height: 40%;
+  height: 50%;
   background-image: url(${faceFrame});
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
+  z-index: 0;
 `
 
 const MainFont = styled.span`
@@ -99,6 +99,7 @@ const ButtonsBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 `
 
 const GoToGalleryButtonBox = styled.div`

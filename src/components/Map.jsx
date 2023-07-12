@@ -7,16 +7,17 @@ import naverMapIcon from '../assets/images/naver_map.gif';
 import kakaoMapIcon from '../assets/images/kakao_map.gif';
 import copyIcon from '../assets/images/copy.png';
 import backgroundImage from '../assets/images/background_main.jpeg'
+import goHomeIcon from '../assets/images/back-to-home.png'
 
 const containerStyle = {
     width: '90%',
     height: '300px',
-    maxWidth: '500px',
+    maxWidth: '400px',
     borderRadius: '3%',
     border: '2px solid black',
     marginRight: 'auto',
     marginLeft: 'auto',
-    marginTop: '20px',
+    marginTop: '80px',
 };
 
 const center = {
@@ -45,7 +46,11 @@ export const Map = () => {
 
     return (
         <Background>
-            <GoBack><LinkExtend to={'/first-birth-day'}>🔙</LinkExtend></GoBack>
+            <TopMenu>
+                <LinkExtend to={'/first-birth-day'}>
+                    <GoHome />
+                </LinkExtend>
+            </TopMenu>
             {/*<Title>가율이 보러 오시는길</Title>*/}
             {isLoaded ? (
                 <GoogleMap
@@ -90,6 +95,10 @@ const Background = styled.div`
   background-position: center;
 `
 
+const TopMenu = styled.div`
+  display: flex;
+`
+
 const MainFont = styled.h1`
   font-family: var(--font-googlePoorStory);
   margin: 5px;
@@ -127,11 +136,14 @@ const CopyButton = styled.a`
   cursor: pointer;
 `
 
-const GoBack = styled.h2`
+const GoHome = styled.div`
   position: absolute;
-  top: 1%;
-  left: 3%;
-  font-size: 35px;
+  top: 7%;
+  left: 5%;
+  width: 32px;
+  height: 32px;
+  background-image: url(${goHomeIcon});
+  background-size: 100%;
 `
 
 const LinkExtend = styled(Link)`
