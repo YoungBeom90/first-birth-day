@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import naverMapIcon from '../assets/images/naver_map.gif';
 import kakaoMapIcon from '../assets/images/kakao_map.gif';
 import copyIcon from '../assets/images/copy.png';
-import backgroundImage from '../assets/images/background4.jpg'
+import backgroundImage from '../assets/images/background_main.jpeg'
 
 const containerStyle = {
     width: '90%',
@@ -15,7 +15,8 @@ const containerStyle = {
     borderRadius: '3%',
     border: '2px solid black',
     marginRight: 'auto',
-    marginLeft: 'auto'
+    marginLeft: 'auto',
+    marginTop: '80px'
 };
 
 const center = {
@@ -72,20 +73,23 @@ export const Map = () => {
                     <span>2,7호선 건대입구역</span><br/>
                     <span>5번 출구 맞은편에 있습니다. 😍</span>
                 </TextGroup>
-
             </Description>
         </Background>
     )
 }
 
 const Background = styled.div`
-  width: ${window.innerWidth}px;
-  height: ${window.innerHeight + 50}px;
-  padding-top: 80px;
-  background-color: lemonchiffon;
+  width: 100%;
+  height: ${window.innerHeight}px;
+  max-width: ${window.innerWidth}px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url(${backgroundImage});
-  background-size: 110%;
-  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
 `
 
 const MainFont = styled.h1`
@@ -123,22 +127,20 @@ const Description = styled(MainFont)`
     margin-right: auto;
     margin-left: auto;
     content: "";
-    background: wheat;
+    background: whitesmoke;
     position: absolute;
     top: -10px;
     left: 2%;
     border-radius: 20px;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.4;
   }
 `
 
 const TextGroup = styled(MainFont)`
   font-size: 22px;
   text-align: center;
-  color: midnightblue;
-  z-index: 0;
-
+  color: darkslateblue;
 `
 
 const CopyButton = styled.a`

@@ -1,5 +1,5 @@
 import ImageGallery from 'react-image-gallery';
-import backgroundImage from '../assets/images/background2.jpeg'
+import backgroundImage from '../assets/images/background_gallery.jpeg'
 import image1 from '../assets/images/gallary/1.jpeg'
 import image2 from '../assets/images/gallary/2.jpeg'
 import image3 from '../assets/images/gallary/3.jpeg'
@@ -68,7 +68,6 @@ const images = [
 export const Gallery = () => {
     return (
         <Background>
-            <BackgroundImage>
                 <Link to={'/first-birth-day'}><GoBack>🔙</GoBack></Link>
                 <Contents>
                     <ImageGallery
@@ -84,26 +83,15 @@ export const Gallery = () => {
                         <LinkExtend to={'/first-birth-day/map'}><GoToMap>📍오시는길</GoToMap></LinkExtend>
                     </GoToMapButtonBox>
                 </Contents>
-
-            </BackgroundImage>
         </Background>
     )
 }
 
 const Background = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: ${window.innerHeight + 150}px;
-  background-color: #E2D1C4;
-  background-repeat: no-repeat;
-`
-
-const BackgroundImage = styled.div`
-  width: 100%;
-  height: 100%;
+  height: ${window.innerHeight}px;
+  max-width: ${window.innerWidth}px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

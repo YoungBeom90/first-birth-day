@@ -34,11 +34,17 @@ code {
     src: url(../fonts/Gamja_Flower/GamjaFlower-Regular.ttf)
 }
 
+@font-face {
+    font-family: "googlePoorStory";
+    src: url(../fonts/Poor_Story/PoorStory-Regular.ttf)
+}
+
 :root {
     --font-googleSingleDay: "googleSingleDay";
     --font-googleGowunDodum: "googleGowunDodum";
     --font-googleHiMelody: "googleHiMelody";
     --font-googleGamjaFlower: "googleGamjaFlower";
+    --font-googlePoorStory: 'googlePoorStory';
 }
 
 
