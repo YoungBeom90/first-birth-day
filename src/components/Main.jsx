@@ -74,7 +74,6 @@ const FaceFrame = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  
 `
 
 const MainFont = styled.span`

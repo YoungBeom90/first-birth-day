@@ -16,7 +16,7 @@ const containerStyle = {
     border: '2px solid black',
     marginRight: 'auto',
     marginLeft: 'auto',
-    marginTop: '80px'
+    marginTop: '20px',
 };
 
 const center = {
@@ -57,23 +57,21 @@ export const Map = () => {
                     <MarkerF position={markerPosition} icon={{url: maker}}/>
                 </GoogleMap>
             ) : <></>}
-            <Description>
-                <TextGroup>
-                    <Address>
-                        <span>📍서울 광진구 능동로 90&nbsp;</span>
-                        <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
-                            <CopyButton />
-                        </CopyToClipboard>
-                    </Address>
-                    <AppButtons>
-                        <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
-                        <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
-                    </AppButtons><br/>
-                    <span>더 클래스 500 B동 3층</span><br/>
-                    <span>2,7호선 건대입구역</span><br/>
-                    <span>5번 출구 맞은편에 있습니다. 😍</span>
-                </TextGroup>
-            </Description>
+            <TextGroup>
+                <Address>
+                    <span>📍서울 광진구 능동로 90&nbsp;</span>
+                    <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
+                        <CopyButton />
+                    </CopyToClipboard>
+                </Address>
+                <AppButtons>
+                    <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
+                    <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
+                </AppButtons><br/>
+                <span>더 클래스 500 B동 3층</span><br/>
+                <span>2,7호선 건대입구역 5번 출구 맞은편</span><br/>
+                <span>더 클래스 500 호텔 내 위치.</span>
+            </TextGroup>
         </Background>
     )
 }
@@ -93,7 +91,8 @@ const Background = styled.div`
 `
 
 const MainFont = styled.h1`
-  font-family: var(--font-googleGamjaFlower);
+  font-family: var(--font-googlePoorStory);
+  margin: 5px;
 `
 
 // const MainFont2 = styled.h1`
@@ -110,37 +109,12 @@ const Address = styled.div`
   margin-bottom: 22px;
 `
 
-const Description = styled(MainFont)`
-  width: 95%;
-  height: 260px;
-  max-width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  
-  ::after {
-    width: 95%;
-    height: 260px;
-    max-width: 500px;
-    margin-right: auto;
-    margin-left: auto;
-    content: "";
-    background: whitesmoke;
-    position: absolute;
-    top: -10px;
-    left: 2%;
-    border-radius: 20px;
-    z-index: -1;
-    opacity: 0.4;
-  }
-`
-
 const TextGroup = styled(MainFont)`
   font-size: 22px;
   text-align: center;
   color: darkslateblue;
+  margin-top: 30px;
+  z-index: 1;
 `
 
 const CopyButton = styled.a`
