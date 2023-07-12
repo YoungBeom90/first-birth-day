@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/first-birth-day/static/css/main.26a7d13a.css",
-    "main.js": "/first-birth-day/static/js/main.f787fd80.js",
-    "static/media/ga-yul-face.png": "/first-birth-day/static/media/ga-yul-face.6c94ab5089ffd6ba958f.png",
+    "main.css": "/first-birth-day/static/css/main.dac509a8.css",
+    "main.js": "/first-birth-day/static/js/main.08f74131.js",
+    "static/media/HiMelody-Regular.ttf": "/first-birth-day/static/media/HiMelody-Regular.984636f1dce3ac1821f6.ttf",
+    "static/media/GamjaFlower-Regular.ttf": "/first-birth-day/static/media/GamjaFlower-Regular.317f969e43bbf7cb06a0.ttf",
+    "static/media/gayul-face2.png": "/first-birth-day/static/media/gayul-face2.e7cc24892f41a471e73d.png",
     "static/media/GowunDodum-Regular.ttf": "/first-birth-day/static/media/GowunDodum-Regular.39c9a39c246c3c54c53e.ttf",
+    "static/media/Welcome.mp3": "/first-birth-day/static/media/Welcome.8ac7e04fb43dd9bdb868.mp3",
+    "static/media/PoorStory-Regular.ttf": "/first-birth-day/static/media/PoorStory-Regular.bec8ef9a74351552c94e.ttf",
+    "static/media/background_main.jpeg": "/first-birth-day/static/media/background_main.5253e80c89407acc4e3c.jpeg",
     "static/media/SingleDay-Regular.ttf": "/first-birth-day/static/media/SingleDay-Regular.b78b535a0525794dd2ad.ttf",
     "static/media/1.jpeg": "/first-birth-day/static/media/1.87be4978b3262c4c21f9.jpeg",
     "static/media/naver_map.gif": "/first-birth-day/static/media/naver_map.2d35685929c850ad3691.gif",
@@ -15,15 +20,15 @@
     "static/media/8.jpeg": "/first-birth-day/static/media/8.0a200532136577b02c4a.jpeg",
     "static/media/kakao_map.gif": "/first-birth-day/static/media/kakao_map.fd5da8ddcf2ca12ce0d6.gif",
     "static/media/3.jpeg": "/first-birth-day/static/media/3.bb5e8253580972878e46.jpeg",
-    "static/media/background.jpg": "/first-birth-day/static/media/background.9cb0b45f806e16aca974.jpg",
-    "static/media/background2.jpeg": "/first-birth-day/static/media/background2.5d5f4c4129a11945dc16.jpeg",
+    "static/media/face-frame.png": "/first-birth-day/static/media/face-frame.91ceece43ece8d4cf480.png",
+    "static/media/background_gallery.jpeg": "/first-birth-day/static/media/background_gallery.5d5f4c4129a11945dc16.jpeg",
     "static/media/marker.png": "/first-birth-day/static/media/marker.9ed724149902e2e8f7c4.png",
     "index.html": "/first-birth-day/index.html",
-    "main.26a7d13a.css.map": "/first-birth-day/static/css/main.26a7d13a.css.map",
-    "main.f787fd80.js.map": "/first-birth-day/static/js/main.f787fd80.js.map"
+    "main.dac509a8.css.map": "/first-birth-day/static/css/main.dac509a8.css.map",
+    "main.08f74131.js.map": "/first-birth-day/static/js/main.08f74131.js.map"
   },
   "entrypoints": [
-    "static/css/main.26a7d13a.css",
-    "static/js/main.f787fd80.js"
+    "static/css/main.dac509a8.css",
+    "static/js/main.08f74131.js"
   ]
 }
