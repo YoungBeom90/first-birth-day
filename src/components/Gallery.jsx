@@ -110,7 +110,7 @@ const Contents = styled.div`
 `
 
 const MainFont = styled.h2`
-  font-family: var(--font-googleHiMelody);
+  font-family: var(--font-googlePoorStory);
 `
 
 const GoHome= styled.div`
