@@ -1,5 +1,5 @@
 import ImageGallery from 'react-image-gallery';
-import backgroundImage from '../assets/images/background_gallery.jpeg'
+import backgroundImage from '../assets/images/background-gallary.jpeg'
 import image1 from '../assets/images/gallary/1.jpeg'
 import image2 from '../assets/images/gallary/2.jpeg'
 import image3 from '../assets/images/gallary/3.jpeg'
@@ -129,7 +129,7 @@ const LinkExtend = styled(Link)`
 
 const GoToMapButtonBox = styled.div`
   position: absolute;
-  top: 3%;
+  top: 5%;
   right: 3%;
   animation-duration: 2s;
   animation-delay: 1s;
