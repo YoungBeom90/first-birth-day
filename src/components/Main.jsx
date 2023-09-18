@@ -42,8 +42,6 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   background-image: url(${backgroundImage});
-  background-repeat: no-repeat;
-  background-position: center;
 `
 
 const Texts = styled.div`

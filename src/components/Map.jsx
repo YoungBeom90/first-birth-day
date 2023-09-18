@@ -17,7 +17,7 @@ const containerStyle = {
     border: '2px solid black',
     marginRight: 'auto',
     marginLeft: 'auto',
-    marginTop: '80px',
+    // marginTop: '10px',
 };
 
 const center = {
@@ -83,8 +83,7 @@ export const Map = () => {
 
 const Background = styled.div`
   width: 100%;
-  height: ${window.innerHeight}px;
-  max-width: ${window.innerWidth}px;
+  height: ${window.innerHeight+120}px;
   margin: 0;
   display: flex;
   flex-direction: column;
