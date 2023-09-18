@@ -24,6 +24,9 @@ export const Main = () => {
                 <GoToMapButtonBox>
                     <LinkExtend to={'/first-birth-day/map'}><GoToMap>📍오시는길</GoToMap></LinkExtend>
                 </GoToMapButtonBox>
+                <GoToProcedureButtonBox>
+                    <LinkExtend to={'/first-birth-day/procedure'}><GoToProcedure>📜 식순</GoToProcedure></LinkExtend>
+                </GoToProcedureButtonBox>
             </ButtonsBox>
         </Background>
     )
@@ -105,19 +108,20 @@ const ButtonsBox = styled.div`
 const GoToGalleryButtonBox = styled.div`
   text-align: center;
   margin-right: 10px;
-  animation-duration: 2s;
+  animation-duration: 3s;
+  animation-delay: 1s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
 `
+
 const GoToGallery = styled(MainFont)`
   font-size: 20px;
   color: palevioletred;
 `
-
 const GoToMapButtonBox = styled.div`
   text-align: center;
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-delay: 2s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
 `
@@ -125,4 +129,16 @@ const GoToMap = styled(MainFont)`
   font-size: 20px;
   color: palevioletred;
 `
+const GoToProcedureButtonBox = styled.div`
+  text-align: center;
+  margin-right: 10px;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-name: motionUp;
+  animation-iteration-count: infinite;
+`
 
+const GoToProcedure = styled(MainFont)`
+  font-size: 20px;
+  color: palevioletred;
+    `

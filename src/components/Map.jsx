@@ -100,7 +100,7 @@ const TopMenu = styled.div`
 `
 
 const MainFont = styled.h1`
-  font-family: var(--font-googlePoorStory);
+  font-family: var(--font-googleGowunDodum);
   margin: 5px;
 `
 
@@ -121,7 +121,7 @@ const Address = styled.div`
 const TextGroup = styled(MainFont)`
   font-size: 22px;
   text-align: center;
-  color: darkslateblue;
+  color: black;
   margin-top: 30px;
   z-index: 1;
 `

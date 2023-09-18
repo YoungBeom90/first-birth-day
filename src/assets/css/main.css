@@ -1,12 +1,12 @@
 @keyframes motionUp {
     0% {
-        margin-top: 10px;
-    }
-    50% {
         margin-top: 0;
     }
+    50% {
+        margin-top: 20px;
+    }
     100% {
-        margin-top: 10px;
+        margin-top: 0;
     }
 }
 

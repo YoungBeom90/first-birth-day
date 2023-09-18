@@ -132,12 +132,12 @@ const GoToMapButtonBox = styled.div`
   top: 5%;
   right: 3%;
   animation-duration: 2s;
-  animation-delay: 1s;
+  //animation-delay: 1s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
 `
 
 const GoToMap = styled(MainFont)`
-  font-size: 22px;
-  color: #B66062;
+  font-size: 20px;
+  color: palevioletred;
 `

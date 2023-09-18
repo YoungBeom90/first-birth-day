@@ -5,6 +5,7 @@ import {Gallery} from "./components/Gallery";
 import {Main} from "./components/Main";
 import welcomeMp3 from "./assets/audio/Welcome.mp3";
 import ReactPlayer from "react-player";
+import {Procedure} from "./components/Procedure";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path='/first-birth-day' element={<Main/>}/>
                 <Route path='/first-birth-day/gallery' element={<Gallery/>}/>
                 <Route path='/first-birth-day/map' element={<Map/>}/>
+                <Route path='/first-birth-day/procedure' element={<Procedure/>}/>
             </Routes>
         </div>
     );
