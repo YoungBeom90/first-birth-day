@@ -91,7 +91,6 @@ export const Gallery = () => {
 const Background = styled.div`
   width: 100%;
   height: ${window.innerHeight}px;
-  max-width: ${window.innerWidth}px;
   margin: 0;
   display: flex;
   flex-direction: column;

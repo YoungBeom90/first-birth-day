@@ -28,9 +28,7 @@ export const Procedure = () => {
 }
 
 const Background = styled.div`
-  //width: 100%;
   height: ${window.innerHeight}px;
-  max-width: ${window.innerWidth}px;
   margin: 0;
   display: flex;
   justify-content: center;
