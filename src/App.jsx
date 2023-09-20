@@ -32,7 +32,7 @@ function App() {
 }
 
 const Footer = styled.div`
-  position: relative;
+  position: absolute;
   transform : translateY(-100%);
   padding-bottom: 5px;
   padding-left: 10px;
