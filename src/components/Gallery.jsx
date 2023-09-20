@@ -77,7 +77,7 @@ export const Gallery = () => {
                         showBullets={true}
                         showPlayButton={false}
                         showFullscreenButton={false}
-                        autoPlay={true}
+                        // autoPlay={true}
                         infinite={true}
                     />
                     <GoToMapButtonBox>
@@ -106,6 +106,7 @@ const Contents = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 `
 
 const MainFont = styled.h2`

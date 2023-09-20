@@ -105,8 +105,8 @@ const ButtonsBox = styled.div`
 const GoToGalleryButtonBox = styled.div`
   text-align: center;
   margin-right: 10px;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 1.5s;
+  //animation-delay: 1s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
 `
@@ -117,8 +117,8 @@ const GoToGallery = styled(MainFont)`
 `
 const GoToMapButtonBox = styled.div`
   text-align: center;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
 `
@@ -129,8 +129,8 @@ const GoToMap = styled(MainFont)`
 const GoToProcedureButtonBox = styled.div`
   text-align: center;
   margin-right: 10px;
-  animation-duration: 3s;
-  animation-delay: 3s;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
   animation-name: motionUp;
   animation-iteration-count: infinite;
 `

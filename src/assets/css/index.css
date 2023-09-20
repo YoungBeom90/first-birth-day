@@ -54,12 +54,12 @@ code {
     max-width: 400px !important;
     height: 100% !important;
     margin-bottom: 100px !important;
-    border-radius: 100% !important;
+    /*border-radius: 100% !important;*/
 }
 
 @media screen and (max-width: 767px) {
     .image-gallery-image {
-        width: 80% !important;
+        width: 72% !important;
     }
 }
 
@@ -71,11 +71,15 @@ code {
 
 .image-gallery-image {
     height: 100% !important;
-    border-radius: 100% !important;
+    border-radius: 12% !important;
 }
 
 .image-gallery-bullets {
-    margin-bottom: 10px;
+    margin-bottom: -10%;
+}
+
+.image-gallery-svg {
+    width: 50px !important;
 }
 
 
