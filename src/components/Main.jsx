@@ -12,6 +12,7 @@ export const Main = () => {
             <Texts>
                 <Title1>가율이의</Title1>
                 <Title2>첫번째 생일을 축하해주세요 !!</Title2>
+                <Date>10월 14일 토요일 12시</Date>
             </Texts>
             <FaceSection>
                 <GaYulFace/>
@@ -87,6 +88,11 @@ const Title1 = styled(MainFont)`
 
 const Title2 = styled(MainFont)`
   font-size: 24px;
+`
+
+const Date = styled(MainFont)`
+  margin-top: 20px;
+  font-size: 18px;
 `
 
 const LinkExtend = styled(Link)`
