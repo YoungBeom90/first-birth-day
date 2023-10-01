@@ -53,12 +53,11 @@ const GoHome = styled.div`
 `
 
 const Page = styled.div`
-  width: 60%;
-  height: 50%;
-  min-width: 300px;
-  margin: auto;
+  width: 100%;
+  height: 58%;
+  margin: auto 5%;
   padding: 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: whitesmoke;
 `
 

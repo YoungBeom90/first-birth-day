@@ -125,19 +125,22 @@ const GoHome= styled.div`
 
 const LinkExtend = styled(Link)`
   text-decoration-line: none;
+  margin: 0;
 `
 
 const GoToMapButtonBox = styled.div`
   position: absolute;
-  top: 5%;
-  right: 3%;
-  animation-duration: 2s;
+  top: 7%;
+  right: 5%;
+  //animation-duration: 2s;
   //animation-delay: 1s;
-  animation-name: motionUp;
-  animation-iteration-count: infinite;
+  //animation-name: motionUp;
+  //animation-iteration-count: infinite;
 `
 
 const GoToMap = styled(MainFont)`
   font-size: 20px;
   color: palevioletred;
+  margin: 0;
+  font-weight: normal;
 `

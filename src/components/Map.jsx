@@ -13,8 +13,8 @@ const containerStyle = {
     width: '90%',
     height: '300px',
     maxWidth: '400px',
-    borderRadius: '3%',
-    border: '2px solid black',
+    borderRadius: '2%',
+    border: '0px solid black',
     marginRight: 'auto',
     marginLeft: 'auto',
     // marginTop: '10px',
@@ -64,7 +64,7 @@ export const Map = () => {
             ) : <></>}
             <TextGroup>
                 <Address>
-                    <span>📍서울 광진구 능동로 90&nbsp;</span>
+                    <span>📍 서울 광진구 능동로 90&nbsp;</span>
                     <CopyToClipboard text={'서울 광진구 능동로 90'} onCopy={()=>alert("주소가 복사되었습니다")}>
                         <CopyButton />
                     </CopyToClipboard>
@@ -72,10 +72,12 @@ export const Map = () => {
                 <AppButtons>
                     <NaverAppButton href={`nmap://search?query=${encodeURI('더 클래식 500 라구뜨')}`} />
                     <KakaoAppButton href={`kakaomap://search?q=${encodeURI('더 클래식 500 라구뜨')}`}/>
-                </AppButtons><br/>
-                <span>더 클래스 500 B동 3층</span><br/>
-                <span>2,7호선 건대입구역 5번 출구 맞은편</span><br/>
-                <span>더 클래스 500 호텔 내 위치.</span>
+                </AppButtons>
+                <SubTextGroup>
+                    <span>더 클래스 500 B동 3층</span><br/>
+                    <span>2,7호선 건대입구역 5번 출구 맞은편</span><br/>
+                    <span>더 클래스 500 호텔 내 위치</span>
+                </SubTextGroup>
             </TextGroup>
         </Background>
     )
@@ -83,7 +85,7 @@ export const Map = () => {
 
 const Background = styled.div`
   width: 100%;
-  height: ${window.innerHeight+120}px;
+  height: ${window.innerHeight}px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -96,11 +98,14 @@ const Background = styled.div`
 
 const TopMenu = styled.div`
   display: flex;
+  height: auto;
+  min-height: 110px;
 `
 
 const MainFont = styled.h1`
   font-family: var(--font-googleGowunDodum);
   margin: 5px;
+  font-weight: normal;
 `
 
 // const MainFont2 = styled.h1`
@@ -123,6 +128,11 @@ const TextGroup = styled(MainFont)`
   color: black;
   margin-top: 30px;
   z-index: 1;
+`
+const SubTextGroup = styled(MainFont)`
+  font-size: 16px;
+  margin-top: 17px;
+  margin-bottom: 25px;
 `
 
 const CopyButton = styled.a`

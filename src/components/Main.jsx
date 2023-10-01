@@ -24,9 +24,9 @@ export const Main = () => {
                 <GoToMapButtonBox>
                     <LinkExtend to={'/first-birth-day/map'}><GoToMap>📍오시는길</GoToMap></LinkExtend>
                 </GoToMapButtonBox>
-                <GoToProcedureButtonBox>
-                    <LinkExtend to={'/first-birth-day/procedure'}><GoToProcedure>📜 식순</GoToProcedure></LinkExtend>
-                </GoToProcedureButtonBox>
+                {/*<GoToProcedureButtonBox>*/}
+                {/*    <LinkExtend to={'/first-birth-day/procedure'}><GoToProcedure>📜 식순</GoToProcedure></LinkExtend>*/}
+                {/*</GoToProcedureButtonBox>*/}
             </ButtonsBox>
         </Background>
     )
