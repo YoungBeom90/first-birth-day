@@ -18,7 +18,7 @@ function App() {
                 volume={0.5}
                 width={'auto'}
                 height={'20px'}
-                style={{position: 'absolute', right: '20px', bottom: "30px", minWidth: "20px"}}
+                style={{position: 'fixed', right: '20px', bottom: "30px", minWidth: "20px"}}
             />
             <Routes>
                 <Route path='/first-birth-day' element={<Main/>}/>
